@@ -5,8 +5,8 @@
     margin: 1px 0;
   }
   .cartoon{
-    width:48px;
-    height: 48px;
+    width:60px;
+    height: 60px;
     display: flex;
     align-items: center;
     background-color:white;
@@ -14,4 +14,14 @@
     border-radius: 80px;
     bottom: 10px;
   }
-  
+  .img-hero{
+    background-image: url("../images/cat-big.png");
+   background-repeat: no-repeat;
+    object-fit: fill;
+   background-position: -40%;
+   height: 750px;
+   position: relative;
+   margin-left: 85px;
+   margin-right: 40px;
+   margin-bottom: 70px;
+  }
