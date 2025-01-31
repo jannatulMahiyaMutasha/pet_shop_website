@@ -1,0 +1,17 @@
+.styled-hr {
+    border: none;
+    height: 2px;
+    background-color: gainsboro;
+    margin: 1px 0;
+  }
+  .cartoon{
+    width:48px;
+    height: 48px;
+    display: flex;
+    align-items: center;
+    background-color:white;
+    padding: 10px;
+    border-radius: 80px;
+    bottom: 10px;
+  }
+  
