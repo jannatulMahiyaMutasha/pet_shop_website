@@ -23,6 +23,26 @@
         .font-poppins{
             font-family: "Poppins", serif;
         }
+
+        @keyframes moveAndColor {
+  0% {
+    transform: translateX(0);
+    color: #A020F0; /* Purple */
+  }
+  50% {
+    transform: translateX(20px);
+    color: black; /* black */
+  }
+  100% {
+    transform: translateX(0);
+    color: #3357ff; /* Blue */
+  }
+}
+
+.moving-text {
+  animation: moveAndColor 2s infinite alternate ease-in-out;
+}
+
     </style>
 </head>
 <body class="font-poppins">
@@ -89,21 +109,29 @@
     
     <main>
       <!--hero section-->
-        <section class="bg-white py-12 sm:img-hero img-hero">
-          <div class="container mx-auto flex lg:flex-row items-center gap-8 px-4">
-            <!-- Text Section -->
-            <div class="text-center lg:text-left mb-6 ml-6 ">
-              <h1 class="text-2xl lg:text-3xl font-bold text-gray-800">
-                Pamper Your Pet, <br>
-                Because They Deserve <br> the Best
-              </h1>
-              <p class="mt-4 text-gray-600">
-                Discover a world of treats, toys, and essentials handpicked for <br> your furry friends. Shop now and make tails wag with joy!
-              </p>
-              <button class="btn btn-warning hover:bg-yellow-500 mt-6 mb-6 px-6 py-3 rounded-md text-md text-black">Find a Pet</button>
+        <div class="bg-white py-12 sm:img-hero img-hero">
+          <div>
+              <div class="container mx-auto flex lg:flex-row items-center gap-8 px-4">
+                <!-- Text Section -->
+                <div class="text-center lg:text-left mb-6 ml-6 ">
+                  <h1 class="text-2xl lg:text-3xl font-bold text-gray-800">
+                    Pamper Your Pet, <br>
+                    Because They Deserve <br> the Best
+                  </h1>
+                  <p class="mt-4 text-gray-600">
+                    Discover a world of treats, toys, and essentials handpicked for <br> your furry friends. Shop now and make tails wag with joy!
+                  </p>
+                  <button class="btn btn-warning hover:bg-yellow-500 mt-6 mb-6 px-6 py-3 rounded-md text-md text-black">Find a Pet</button>
+                </div>
+              </div>
+              <!--animation-->
+                  <div class="flex justify-center items-center h-screen pb-80 pt-30">
+                    <h1 class="text-3xl lg:text-5xl font-bold moving-text ">
+                      Welcome to Our Pet Store! 
+                    </h1>
+                  </div>
+                </div>
             </div>
-           </div>
-          </div>
         </section>
       <!--categories-->
         <section class="container mx-auto p-5 pl-20 pr-20">
